@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+        System.out.println("What is the side?    ");
+      Scanner input = new Scanner(System.in);
+        int side = input.nextInt();
+        int area, perimeter;
+        area = side * side;
+    perimeter = side * 4;
+    System.out.println("The side is: "+ side);
+        System.out.println("The area is: "+ area);
+        System.out.println("The perimeter is: "+ perimeter);
+  }
+}
