@@ -1,0 +1,6 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println("First name: Nhu\t\t\t\t\t\t\t Last name: Ly");
+    System.out.println("Email: example@gmail.com\t\t\t Student ID: 111111");
+  }
+}
