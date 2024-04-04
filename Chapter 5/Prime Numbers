@@ -1,0 +1,20 @@
+class Main {
+  public static void main(String[] args) {
+    int number, sum = 0;
+    System.out.println("The prime numbers between 100 and 200 are: ");
+
+    for (number = 100; number <= 200; number++) {
+        int prime;
+        for (prime = 2; prime <= Math.sqrt(number); prime++){
+          if (number % prime == 0) {
+            break;
+          }
+        }
+        if (prime > Math.sqrt(number)) {
+          System.out.println(number);
+          sum = sum + number;
+        }
+    }
+    System.out.println("The total sum of prime number from 100 to 200 is: " + sum);
+  }
+}
