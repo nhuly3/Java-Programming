@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+     Scanner input = new Scanner(System.in);
+       int pennies, nickels, dimes, quarters, loonies, toonies;
+       double dollars;
+       System.out.println("What is the number of toonies?   ");
+       toonies = input.nextInt();
+       System.out.println("What is the number of loonies?   ");
+       loonies = input.nextInt();
+       System.out.println("What is the number of quarters?   ");
+       quarters = input.nextInt();
+       System.out.println("What is the number of dimes?   ");
+       dimes = input.nextInt();
+       System.out.println("What is the number of nickels?   ");
+       nickels = input.nextInt();
+       System.out.println("What is the number of pennies?   ");
+       pennies = input.nextInt();
+
+       dollars = (0.01 * pennies) + (0.1 * dimes) + (1 * loonies) + (2 * toonies) + (0.25 * quarters) + (0.05 * nickels); 
+       System.out.println(" The total money is: " + dollars);
+
+  }
+}
