@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Enter a letter: ");
+    Scanner input = new Scanner(System.in);
+    char vc = input.next().charAt(0);
+
+    if(vc == 'a' || vc == 'e' || vc == 'o' || vc == 'u' || vc == 'i' || vc == 'A' || vc == 'E' || vc == 'I')
+      System.out.println(vc + " is a vowel");
+    else if ((vc >= 'a' & vc <= 'z') || (vc >= 'A' & vc <= 'Z'))
+      System.out.println(vc + " is a consonant");
+    else
+      System.out.println(vc + " is an invalid input");
+  }
+}
