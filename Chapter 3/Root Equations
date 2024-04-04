@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    double r1 = 0, r2 = 0;
+    System.out.println("Enter a, b, c: ");
+    double a = input.nextDouble();
+    double b = input.nextDouble();
+    double c = input.nextDouble();
+
+    double d = (b*b)-(4*a*c);
+    double sqrt = Math.sqrt(d);
+
+    if (d > 0) {
+      r1 = (-b+sqrt) / (2 * a);
+      r2 = (-b-sqrt) / (2 * a);
+      System.out.println("The equation has two roots " + r1 + " and " + r2);
+    }
+    else if (d == 0) {
+      double r = -b / (2 * a);
+      System.out.println("The equation has one root: " + r);
+    }
+    else
+      System.out.println("The equation has no real roots");
+  }
+}
